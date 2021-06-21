@@ -8,7 +8,7 @@ This react app contains how to use JSON data to create Multiple price card compo
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/mahithmadwesh94/React-Price-Cart/blob/master/screenshot/UI-Capture.PNG)
 
   
 ## Authors
