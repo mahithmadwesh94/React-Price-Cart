@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import PriceCard from './components/price-card/price-card.component';
+import price_data from './data';
 
 function App() {
+  const collection = price_data
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <section className="pricing py-5">
+      <div className="container">
+        <div className="row">
+          {
+            collection.map(({ title, price, ...OtherProps }) => (
+              <PriceCard title={title} price={price} {...OtherProps} />
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
   );
 }
 
